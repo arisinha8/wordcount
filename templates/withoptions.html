@@ -1,0 +1,19 @@
+<h1> Word Count</h1>
+
+<h1> There are {{ count }} Words </h1>
+
+{{ fulltext }}
+
+<h1> word Occurance is as below </h1>
+
+{{worddictionary}}
+
+
+{% for word, counttotal in wordictionary%}
+
+{{ word }}
+<br />
+{{ counttotal }}
+<br />
+
+{% endfor %}
